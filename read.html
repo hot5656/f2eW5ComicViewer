@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="stylesheets/read.css">
+	<!-- Roboto Font -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo">Comicomic</div>
+		</div>
+		<div id="pop-pic">
+			<img class="ad-top" src="img/ad-1.png" alt="">
+			<div class="pop-exit">
+				<a href="javascript:closePic()">
+					<i class="far fa-times-circle icon-3x"></i>
+				</a>
+			</div>
+			<div class="clear-fix"></div>
+			<a  class="pic-shift-top" href="javascript:picShiftLeft()">
+				<i class="fas fa-chevron-left"></i>
+			</a>
+			<img id="pic-top" src="img/storyboard-9.png" alt="">
+			<a  class="pic-shift-top" href="javascript:picShiftRight()">
+				<i class="fas fa-chevron-right"></i>
+			</a>
+			<img class="ad-top" src="img/ad-3.png" alt="">
+		</div>
+		<div class="content">
+			<img class="ad" src="img/ad-1.png" alt="">
+			<div class="head">
+				<h2>
+						<a href="index.html">My Hexschool</a>
+						<i class="fas fa-caret-right"></i>
+				</h2>
+				<select id="chapter" name="chapter" onclick="chapterChange(event)">
+				　<option value="1">Chapter 1</option>
+				　<option value="2">Chapter 2</option>
+				</select>
+				<select id="page" name="pager" onclick="PgaeChange(event)">
+				　<option value="1">Page 01</option>
+				　<option value="2">Page 02</option>
+				　<option value="3">Page 03</option>
+				　<option value="4">Page 04</option>
+				　<option value="5">Page 05</option>
+				　<option value="6">Page 06</option>
+				　<option value="7">Page 07</option>
+				　<option value="8">Page 08</option>
+				　<option value="9">Page 09</option>
+				　<option value="10">Page 10</option>
+				　<option value="11">Page 11</option>
+				　<option value="12">Page 12</option>
+				</select>
+				<div class="day-night">
+					<a href=""><i class="fas fa-sun"></i></a>
+					<div class="trigger"></div>
+					<a href=""><i class="fas fa-moon"></i></a>					
+				</div>
+			</div>
+			<img class="ad" src="img/ad-2.png" alt="">
+			<div class="pic">
+				<div>
+					<a  class="pic-shift" href="javascript:picShiftLeft()">
+						<i class="fas fa-chevron-left"></i>
+					</a>
+					</div>
+						<a href="javascript:popPic()">
+							<img id="pic-main" src="img/storyboard-1.png" alt="">
+						</a>
+					<div>
+					<a  class="pic-shift" href="javascript:picShiftRight()">
+						<i class="fas fa-chevron-right"></i>
+					</a>
+				</div>
+				<div class="clear-fix"></div>
+			</div>
+			<div class="list">
+				<ul class="select">
+					<li >
+						<a class="subpic-shift" href="javascript:picShiftLeft()">
+							<i class="fas fa-angle-double-left"></i>
+						</a>
+					</li>
+					<li class="subpic">
+						<h3>07</h3>
+						<a href="javascript:subSelect(1)">
+							<img class="pic-active" src="img/storyboard-7.png" alt="">
+						</a>
+					</li>
+					<li class="subpic">
+						<h3>08</h3>
+						<a href="javascript:subSelect(2)">
+							<img src="img/storyboard-8.png" alt="">
+						</a>
+					</li>
+					<li class="subpic">
+						<h3>09</h3>
+						<a href="javascript:subSelect(3)">
+							<img src="img/storyboard-9.png" alt="">
+						</a>
+					</li>
+					<li class="subpic">
+						<h3>10</h3>
+						<a href="javascript:subSelect(4)">
+							<img src="img/storyboard-10.png" alt="">
+						</a>
+					</li>
+					<li class="subpic">
+						<h3>11</h3>
+						<a href="javascript:subSelect(5)">
+							<img src="img/storyboard-11.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a class="subpic-shift subpic-gap" href="javascript:picShiftRight()">
+							<i class="fas fa-angle-double-right"></i>
+						</a>
+					</li>
+				</ul>
+				<div class="clear-fix"></div>
+				<div class="shift">
+					<i class="fas fa-caret-left -white"></i>
+				</div>
+				
+				<input onclick="picSelect()" type="range" min="1" max="12" step="1" value="1" id="slider" />
+				<div class="shift">
+					<i class="fas fa-caret-right -white"></i>
+				</div>
+				<div class="clear-fix"></div>
+			</div>
+			<img class="ad" src="img/ad-3.png" alt="">
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="all.js"></script>
+</body>
+</html>

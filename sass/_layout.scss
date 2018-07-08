@@ -1,0 +1,230 @@
+
+@mixin clear-fix {
+	content: ".";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear: both;
+}
+@mixin clear-fix-rght {
+	content: ".";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear: right;
+}
+@mixin clear-fix-left {
+	content: ".";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear: left;
+}
+@mixin circircle($size, $bpcolor) {
+  	border-radius: 50%;
+  	height: $size;
+  	width: $size;
+  	padding-top: $size/3;
+  	font-size: $size/3;
+  	background: $bpcolor;
+}
+@mixin box-size {
+  /* box size incluse padding and boarder */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+}
+
+
+/* @font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Italic.ttf");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Medium.ttf");
+    font-weight: 700;
+} */
+
+// HTML link set 
+// <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         // url('Roboto-Regular-webfont.woff') format('woff'),
+         // url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Italic-webfont.eot');
+    src: url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         // url('Roboto-Italic-webfont.woff') format('woff'),
+         // url('Roboto-Italic-webfont.ttf') format('truetype'),
+         url('Roboto-Italic-webfont.svg#RobotoItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold-webfont.eot');
+    src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         // url('Roboto-Bold-webfont.woff') format('woff'),
+         // url('Roboto-Bold-webfont.ttf') format('truetype'),
+         url('Roboto-Bold-webfont.svg#RobotoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BoldItalic-webfont.eot');
+    src: url('Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         // url('Roboto-BoldItalic-webfont.woff') format('woff'),
+         // url('Roboto-BoldItalic-webfont.ttf') format('truetype'),
+         url('Roboto-BoldItalic-webfont.svg#RobotoBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium-webfont.eot');
+    src: url('Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         // url('Roboto-Medium-webfont.woff') format('woff'),
+         // url('Roboto-Medium-webfont.ttf') format('truetype'),
+         url('Roboto-Medium-webfont.svg#RobotoThin') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@mixin logo {
+	font-family: 'Roboto', Fallback, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 36px;
+}
+
+@mixin title {
+	font-family: 'Roboto', Fallback, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+}
+@mixin title2 {
+	font-family: 'Roboto', Fallback, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+@mixin title3 {
+	font-family: 'Roboto', Fallback, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+@mixin subtitle {
+	font-family: 'Roboto', Fallback, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+@mixin pagagraph {
+	font-family: 'Roboto', Fallback, sans-serif;
+	font-size: 16px;
+}
+
+@mixin lable {
+	font-family: 'Roboto', Fallback, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+/*
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="fas fa-caret-right"></i>
+<i class="fas fa-angle-double-right"></i>
+<i class="fas fa-chevron-right"></i>
+<i class="fas fa-chevron-left"></i>
+<i class="fas fa-sun"></i>
+<i class="fas fa-moon"></i>
+<i class="far fa-times-circle"></i>
+*/
+
+
+
+$green: #50FF44;
+$black: #000000;
+$white: #FFFFFF;
+$gray-f2: #F2F2F2;
+$gray-80:  rgba(0, 0, 0, 0.8);
+$gray-10:  rgba(0, 0, 0, 0.1);
+$darker-bp: #d8e0e2;
+$white-20:  rgba(255, 255, 255, 0.2);
+
+
+
+
+
+* {
+  /* box size incluse padding and boarder */
+  // box-sizing: border-box;
+  // -moz-box-sizing: border-box;
+  // -webkit-box-sizing: border-box; 
+}
+.clear-fix {
+	clear: both;	
+}
+/* layout css */
+.wrap {
+	position: relative;
+	max-width: 1024px;
+	margin: 0 auto;
+	// border: 1px solid orange;
+}
+/* layout css - header */
+.header {
+	height: 74px;
+	background-color: $black;
+	color: $green;
+	.logo {
+		@include logo;
+		text-align: center;
+		line-height: 74px;
+	}
+}
+/* layout css - content */
+.content {
+	min-height: 200px;
+	// background-color: pink;
+}
+/* layout css - footer */
+.footer {
+	height: 70px;
+	line-height: 70px;
+	margin-top: 10px;
+	text-align: center;
+	border: 1px solid #000000;
+}

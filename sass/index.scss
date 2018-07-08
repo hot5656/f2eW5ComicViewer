@@ -1,0 +1,102 @@
+@import 'reset';
+@import 'layout';
+
+.content {
+	padding: 0 202px 0px 202px;
+	background-color: $gray-f2;
+	.ad {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+				
+	.pic {
+		width:300px;
+		float: left;
+		@include box-size;
+		border: 4px solid $black;
+
+	}
+	.describe h2 {
+		@include title;
+		line-height: 52px;
+		width: 317px;
+		text-align: center;
+		background-color: $black;
+		color: $white;
+	}
+	.describe {
+		float: left;
+		margin-bottom: 28px;
+
+		.item {
+			@include pagagraph;
+			margin-top: 10px;
+			margin-left:10px;
+			span {
+				display: inline-block;
+				width: 80px;
+				font-weight: bold;
+			}
+		}
+
+		h3 {
+			@include subtitle;
+			margin-top: 20px;
+			margin-left:10px;
+		}
+		p {
+			@include pagagraph;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left:10px;
+			line-height: 24px;
+			width: 300px;
+		}
+	}
+	> h2 {
+		@include title2;
+		background-color: $black;
+		color: $white;
+		width: 180px;
+		text-align: center;
+		line-height: 44px;
+	}
+	.list {
+		@include box-size;
+		@include subtitle;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		min-height: 50px;
+		border: 4px solid $black;
+		width: 620px;
+
+		li {
+			line-height: 42px;
+		}
+	}
+	a {
+		color: $black;
+		text-decoration: none;
+		padding-left: 24px;
+		display: block;
+		> span {
+			@include lable;
+			display: inline-block;
+			background-color: $green;
+			text-align: center;
+			width: 55px;
+			line-height: 18px;
+			margin-left: 15px;
+		}
+	}
+	a:hover {
+		color: $white;
+		background-color: $black;
+	}
+}
+.content::after {
+	@include clear-fix;
+}
+
+
+
